@@ -3,7 +3,7 @@ title: 'Working with Canvas Extensions'
 description: 'Create and iterate on GitHub Copilot app canvases using /create-canvas, then shape them into reusable project or personal extensions.'
 authors:
   - GitHub Copilot Learning Hub Team
-lastUpdated: 2026-06-17
+lastUpdated: 2026-07-19
 estimatedReadingTime: '8 minutes'
 tags:
   - copilot-app
@@ -111,6 +111,32 @@ Reference implementations:
 - Repo example: [`extensions/backlog-swipe-triage/extension.mjs`](https://github.com/github/awesome-copilot/blob/main/extensions/backlog-swipe-triage/extension.mjs)
 - Persistent user-scoped path example: [`extensions/chromium-control-canvas/extension.mjs`](https://github.com/github/awesome-copilot/blob/main/extensions/chromium-control-canvas/extension.mjs)
 
+## Discovering and installing community canvas extensions
+
+The Awesome Copilot canvas gallery includes both first-party extensions (built in this repository) and community-submitted external extensions. Browse all available extensions on the [Canvas Extensions page](../../extensions/).
+
+### Installing an extension
+
+Canvas extensions are distributed as installable plugins. To install a canvas extension from a GitHub repository:
+
+```bash
+copilot plugin install <owner>/<repo>
+```
+
+Or install directly in VS Code by searching `@agentPlugins canvas` in the Extensions view.
+
+> **Note**: For first-party extensions in this repository, you can also clone or copy the extension folder directly into your project's `.github/extensions/` directory.
+
+### Community-submitted extensions
+
+Alongside the extensions built into this repository, the gallery accepts external canvas extensions from the community. These are reviewed submissions from independent authors that appear in the gallery alongside first-party extensions.
+
+Currently listed community extensions:
+
+- **[Coffilot](https://github.com/jdubois/coffilot)** — A Java-focused Copilot canvas extension for navigating and understanding Java codebases.
+
+> **Want to contribute your canvas extension?** See the [Adding Canvas Extensions section in CONTRIBUTING.md](https://github.com/github/awesome-copilot/blob/main/CONTRIBUTING.md#adding-canvas-extensions) for submission instructions. External extensions are reviewed before being listed in the gallery.
+
 ## Examples from this repository
 
 Use these extension folders as concrete references:
@@ -136,7 +162,8 @@ The fastest loop is: **use the canvas**, note friction, and ask the agent for a 
 ## Next steps
 
 - Review the [GitHub Copilot app overview](../github-copilot-app/) for broader session and workflow concepts.
-- Browse the [Canvas Extensions page](../../extensions/) for discoverable extensions.
+- Browse the [Canvas Extensions page](../../extensions/) for discoverable extensions, including community-submitted ones.
 - Fork one of the example extension folders above and adapt it to your own workflow.
+- [Submit your canvas extension](https://github.com/github/awesome-copilot/blob/main/CONTRIBUTING.md#adding-canvas-extensions) to be listed in the community gallery.
 
 ---
